@@ -1,0 +1,58 @@
+/*
+Colors used:
+Primary Color (Blue): #163FBD;
+Secondary Color (Green): #F1A5E6;
+*/
+
+body {
+  background-color: #EFEFEF;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+ font-weight: 400; /* Sets the font weight to 300 */
+ line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+ color: #151314;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4
+
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 600;
+  /* text-decoration: underline */
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  background-color: none
+}
+a:visited { /* visited link */
+  color: black;
+}
+
+a:hover,
+a:focus {
+  color: #F1A5E6;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #F1A5E6;
+}
