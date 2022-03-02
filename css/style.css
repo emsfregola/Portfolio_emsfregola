@@ -16,6 +16,38 @@ body {
  color: #151314;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+    text-align: center;
+    padding: 16px 0;
+    -webkit-box-shadow: 0px 3px 10px -3px rgba(50, 50, 50, 0.4);
+-moz-box-shadow:    0px 3px 10px -3px rgba(50, 50, 50, 0.4);
+box-shadow:         0px 3px 10px -3px rgba(50, 50, 50, 0.4);
+    }
+
+main {
+  padding-top: 147.19px;
+}
+
+nav > ul {
+  display: inline-block;
+  width: 100%;
+  list-style-type: none;
+  padding:0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 8px;
+  font-weight: 600;
+  color: #151314;
+}
+
 
 h1, h2, h3, h4 {
   line-height: 1.4
@@ -97,7 +129,6 @@ a:active { /* selected link */
   border-radius: 40px;
   text-align: center;
 
-
 }
 
 .button.contact:visited {
@@ -128,6 +159,9 @@ a:active { /* selected link */
   color:#151314;
 }
 
+.logo {
+  max-width: 250px;
+}
 /* Layout styling */
 
 .container {
@@ -144,4 +178,11 @@ a:active { /* selected link */
 
 #works h3{
   text-align: center;
+}
+
+#contact {
+  background-color: white;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
 }
