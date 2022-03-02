@@ -13,6 +13,7 @@ body {
  color: #151314;
 }
 
+
 h1, h2, h3, h4 {
   line-height: 1.4
 
@@ -105,3 +106,22 @@ a:active { /* selected link */
   color:white;
   background-color: black;
 }
+
+.underlined.text {
+  display: inline;
+  text-decoration: underlined;
+  color: 151314;
+}
+
+.underlined.text:active {
+  color: #151314;
+}
+
+.underlined.text:visited{
+  color:#151314;
+}
+
+.underlined.text:hover{
+  color:#151314;
+}
+
