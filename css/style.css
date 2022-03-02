@@ -3,6 +3,9 @@ Colors used:
 Primary Color (Blue): #163FBD;
 Secondary Color (Green): #F1A5E6;
 */
+*{
+  box-sizing: : border-box;
+}
 
 body {
   background-color: #EFEFEF;
