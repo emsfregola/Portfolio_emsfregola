@@ -128,3 +128,8 @@ a:active { /* selected link */
   color:#151314;
 }
 
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
