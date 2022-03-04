@@ -186,3 +186,7 @@ a:active { /* selected link */
   display: inline-block;
   width: 100%;
 }
+
+ol {
+  list-style-type: none
+}
