@@ -205,6 +205,48 @@ ol {
   width: 100%;
 }
 
+.berlin-illustration {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+.sun {
+animation-duration: 4s;
+animation-name: color-change;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -260,9 +302,23 @@ Large devices (1024px or larger)
   .col-lg-5{
     width: 40%;
   }
+
+body{
+  font-size: 18px;
+}
+
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body{
+    font-size: 24px;
+  }
+
 }
