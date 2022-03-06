@@ -108,7 +108,9 @@ a:active { /* selected link */
   padding: 16px;
   border-radius: 4px;
   border: 2px solid black;
-  transition: 0.3s ;
+  transition-duration: 0.4s;
+transition-property: opacity;
+transition-timing-function: ease-out;
 }
 
 .button:visited { /* visited link */
@@ -120,6 +122,8 @@ a:active { /* selected link */
   text-decoration: none;
   background-color: white;
   color: black;
+  border: 2px solid black;
+  opacity: 0.8;
 }
 
 .button.contact {
