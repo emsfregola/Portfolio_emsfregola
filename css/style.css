@@ -200,6 +200,7 @@ ol {
   display:inline-blok;
   width: 100%;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -229,11 +230,10 @@ Medium devices (640px and larger)
     width: 46%;
 }
 
+
 [class*="col-"] {
   float:left;
   padding: 10px;
-
-
 }
 
 
@@ -243,6 +243,14 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .col-lg-7{
+    width: 55.9%;
+  }
+
+  .col-lg-5{
+    width: 40%;
+  }
 }
 /* ==============================
 X-large devices (1440px or larger)
