@@ -19,8 +19,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-    text-align: center;
-    padding: 16px 0;
+    padding: 10px 0 4px;
     -webkit-box-shadow: 0px 3px 10px -3px rgba(50, 50, 50, 0.4);
 -moz-box-shadow:    0px 3px 10px -3px rgba(50, 50, 50, 0.4);
 box-shadow:         0px 3px 10px -3px rgba(50, 50, 50, 0.4);
@@ -28,18 +27,14 @@ box-shadow:         0px 3px 10px -3px rgba(50, 50, 50, 0.4);
   }
 
 main {
-  padding-top: 147.19px;
+  padding-top: 61.59px;
 }
 
 nav > ul {
-  display: inline-block;
-  width: 100%;
+
   list-style-type: none;
   padding:0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin:0;
 }
 
 nav > ul > li > a {
@@ -48,6 +43,14 @@ nav > ul > li > a {
   color: #151314;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
 
 h1, h2, h3, h4 {
   line-height: 1.4
@@ -164,7 +167,9 @@ transition-timing-function: ease-out;
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 200px;
+  padding-left: 0px;
+  margin-left: 0;
 }
 /* Layout styling */
 
@@ -246,13 +251,38 @@ animation-timing-function: linear;
   to {transform: translate(100px, 48px);}
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 24px 0 24px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   nav {
@@ -281,6 +311,9 @@ Medium devices (640px and larger)
   padding: 10px;
 }
 
+.logo {
+  max-width: 250px;
+}
 
 }
 
