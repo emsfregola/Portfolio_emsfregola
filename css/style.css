@@ -100,6 +100,25 @@ a:focus {
 a:active { /* selected link */
   color: #F1A5E6;
 }
+
+#cf {
+  position:relative;
+  margin:10px auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
 .button {
   display: inline-block;
    background-color: black;
